@@ -8,6 +8,7 @@ import torch
 from depth_anything_v2.dpt import DepthAnythingV2
 from ultralytics import YOLO
 import supervision as sv  # Import supervision library
+import pyresearch
 
 def process_video(video_path, encoder, input_size, outdir, pred_only, grayscale):
     DEVICE = 'cuda' if torch.cuda.is_available() else 'cpu'
